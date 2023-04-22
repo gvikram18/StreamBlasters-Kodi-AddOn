@@ -4,17 +4,26 @@
         <summary lang="en_GB">Third-party addon for StreamBlasters.</summary>
         <description lang="en_GB">Third-party addon for StreamBlasters.</description>
         <language></language>
+        <summary lang="en_GB">StreamBlasters addon for Kodi, providing access to movies.</summary>
+        <description lang="en_GB">StreamBlasters addon for Kodi, providing access to a wide selection of movies. This addon allows you to search for and stream movies directly from the torrent site, without having to download the entire file.</description>
+        <language>en</language>
         <platform>all</platform>
         <license>MIT</license>
         <forum></forum>
-        <website>https://streamblasters.co/</website>
+        <website>https://streamblasters.pro/</website>
         <email></email>
         <source></source>
         <news></news>
         <disclaimer></disclaimer>
+        <disclaimer>This addon provides access to third-party content, which may be illegal in some jurisdictions. Use at your own risk.</disclaimer>
         <assets>
             <icon>resources/icon.png</icon>
             <fanart>resources/fanart.jpg</fanart>
         </assets>
+        <import addon="script.module.beautifulsoup4" version="4.9.3"/>
+        <import addon="script.module.requests" version="2.25.1"/>
     </extension>
+     <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
 </addon>
