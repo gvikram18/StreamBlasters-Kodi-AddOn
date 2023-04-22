@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.streamblasters" name="StreamBlasters" version="1.0.0" provider-name="Vikram Giriraj">
+    <settings>
+        <category label="General">
+            <setting id="movies_directory" type="text" label="Movies Directory" default="special://home/userdata/addon_data/plugin.video.streamblasters/movies/"/>
+            <setting id="resume_playback" type="bool" label="Resume playback from where you left off" default="true"/>
+            <setting id="auto_play_next" type="bool" label="Auto play next video" default="true"/>
+            <setting id="subtitle_language" type="enum" label="Subtitle Language" default="English">
+                <options>
+                    <option id="en" label="English" />
+                </options>
+            </setting>
+            <setting id="stream_quality" type="enum" label="Stream Quality" default="720p">
+                <options>
+                    <option id="480p" label="480p" />
+                    <option id="720p" label="720p" />
+                    <option id="1080p" label="1080p" />
+                </options>
+            </setting>
+            <category label="Debugging">
+                <setting id="debug_mode" type="bool" label="Enable debug mode" default="false"/>
+                <setting id="debug_log_level" type="enum" label="Debug log level" default="2">
+                    <option id="0" label="None"/>
+                    <option id="1" label="Error"/>
+                    <option id="2" label="Warning"/>
+                    <option id="3" label="Info"/>
+                    <option id="4" label="Debug"/>
+                    <option id="5" label="Trace"/>
+                </setting>
+            </category>
+        </category>
+    </settings>
+</addon>
